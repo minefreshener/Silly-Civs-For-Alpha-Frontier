@@ -1,10 +1,10 @@
 [
   {
-		"name": "Xeno Cavalry",
+		"name": "Xeno Rider",
 		"movementType": "Land"
 	},
   {
-		"name": "Xeno Cavalry Ranged",
+		"name": "Xeno Rider Ranged",
 		"movementType": "Land"
 	},
 ]
