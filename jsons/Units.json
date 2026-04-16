@@ -97,34 +97,6 @@
 			{ "text": "A stealth specialist with a precise, long-ranged gun." }
 		]
 	},
+	///////////////////// NEW UNITS ////////////////////
 	//////////////////// MERCENARIES //////////////////
-	{
-		"name": "The King's Men (Xeno Cavalry)",
-		"unitType": "Xeno Rider",
-		"movement": 4,
-		"strength": 40,
-		"cost": 300,
-		"requiredTech": "Composite Armor",
-		"obsoleteTech": "Stasis Fields",
-		"uniques": [
-			"Mercenary",
-			"Unbuildable <for [Human player] Civilizations>",
-			"Can only be built <in cities with a [Mercenary Offices]>",
-			"Can move immediately once bought",
-			"Limited to [7] per Civilization",
-			"Can move after attacking",
-			"No defensive terrain bonus",
-			"[-33]% Strength <vs [Armored] units>",
-			"Consumes [1] [Promethine]",
-			"Never appears as a Barbarian unit"
-		],
-		"promotions": ["Mercenary Pay","Royal Resolve"],
-		"hurryCostModifier": 20,
-		"attackSound": "shot",
-		"civilopediaText": [
-			{
-				"text": "Powerful mounted warriors, these 'horse'men are known for their unique steeds."
-			}
-		]
-	},
 ]
