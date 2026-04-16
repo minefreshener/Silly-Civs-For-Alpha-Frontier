@@ -93,4 +93,16 @@
 			}
 		]
 	},
+	{
+		"name": "Potential King's Landing Lumber",
+		"maintenance": 0,
+		"requiredTech": "Old Earth Knowledge",
+		"uniques": [
+			"Cannot be purchased",
+			"Unbuildable",
+			"Unsellable",
+			"Moves to new capital when capital changes",
+			"Will not be displayed in Civilopedia"
+		],
+	},
 ]
