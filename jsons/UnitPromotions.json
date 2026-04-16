@@ -1,1 +1,33 @@
-
+[
+  	{
+		"name": "Heal Instantly",
+		"uniques": [
+			"[This Unit] heals [50] HP",
+			"Doing so will consume this opportunity to choose a Promotion"
+		],
+		"unitTypes": [
+			"Infantry",
+			"Stealth Infantry",
+			"Sniper",
+			"Scout",
+			"Rover",
+			"Hover",
+			"Armored",
+			"Siege",
+			"Close Range Water",
+			"Ranged Water",
+			"Submarine",
+			"Helicopter",
+			"Close Range Mech",
+			"Ranged Mech",
+			"Satellite",
+      "Aerocraft",
+      "Xeno Rider",
+      "Xeno Rider Ranged",
+      "Xeno Rider Air",
+      "Xeno True Air"
+		],
+		"row": 0,
+        "column": 0
+	},
+]
