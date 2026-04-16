@@ -1,1 +1,10 @@
-
+[
+  {
+		"name": "Xeno Cavalry",
+		"movementType": "Land"
+	},
+  {
+		"name": "Xeno Cavalry Ranged",
+		"movementType": "Land"
+	},
+]
