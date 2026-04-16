@@ -25,9 +25,790 @@
       "Xeno Rider",
       "Xeno Rider Ranged",
       "Xeno Rider Air",
-      "Xeno True Air"
+      "Xeno True Air",
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
 		],
 		"row": 0,
+        "column": 0
+	},
+	{
+		"name": "Accuracy I",
+		"uniques": [
+			"[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
+		],
+		"unitTypes": ["Siege", "Sniper", "Ranged Mech", "Xeno Rider Ranged"],
+		"row": 1,
+        "column": 1
+	},
+	{
+		"name": "Accuracy II",
+		"prerequisites": ["Accuracy I"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
+		],
+		"unitTypes": ["Siege", "Sniper", "Ranged Mech", "Xeno Rider Ranged"],
+		"row": 1,
+        "column": 2
+	},
+	{
+		"name": "Accuracy III",
+		"prerequisites": ["Accuracy II"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Open terrain] tiles> <when attacking>"
+		],
+		"unitTypes": ["Siege", "Sniper", "Ranged Mech", "Xeno Rider Ranged"],
+		"row": 1,
+        "column": 3
+	},
+
+	{
+		"name": "Barrage I",
+		"uniques": [
+			"[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"
+		],
+		"unitTypes": ["Siege", "Sniper", "Ranged Mech", "Xeno Rider Ranged"],
+		"row": 2,
+        "column": 1
+	},
+	{
+		"name": "Barrage II",
+		"prerequisites": ["Barrage I"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"
+		],
+		"unitTypes": ["Siege", "Sniper", "Ranged Mech", "Xeno Rider Ranged"],
+		"row": 2,
+        "column": 2
+	},
+	{
+		"name": "Barrage III",
+		"prerequisites": ["Barrage II"],
+		"uniques": [
+			"[+15]% Strength <when fighting in [Rough terrain] tiles> <when attacking>"
+		],
+		"unitTypes": ["Siege", "Sniper", "Ranged Mech", "Xeno Rider Ranged"],
+		"row": 2,
+        "column": 3
+	},
+	{
+		"name": "Salvo",
+		"prerequisites": ["Accuracy I", "Barrage I", "Targeting II"],
+		"uniques": ["[+50]% Strength <vs cities>"],
+		"unitTypes": ["Sniper", "Siege", "Ranged Mech", "Xeno Rider Air"],
+		"row": 33,
+        "column": 0
+	},
+	{
+		"name": "Extended Range",
+		"prerequisites": ["Accuracy III", "Barrage III", "Targeting II", "Bombardment II", "Wolfpack II"],
+		"uniques": ["[+1] Range"],
+		"unitTypes": ["Sniper", "Siege", "Ranged Water", "Submarine", "Ranged Mech", "Xeno Rider Ranged"],
+		"row": 34,
+        "column": 0
+	},
+	{
+		"name": "Indirect Fire",
+		"prerequisites": ["Accuracy III", "Barrage III", "Bombardment II", "Targeting II"],
+		"uniques": ["Ranged attacks may be performed over obstacles"],
+		"unitTypes": ["Sniper", "Siege", "Ranged Water", "Ranged Mech", "Xeno Rider Air"],
+		"row": 35,
+        "column": 0
+	},
+	{
+		"name": "Shock I",
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": [
+			"Infantry",
+			"Stealth Infantry",
+			"Rover",
+			"Hover",
+			"Armored",
+			"Close Range Mech",
+			"Xeno Rider", 
+			"Xeno Rider Air"
+		],
+		"row": 3,
+        "column": 1
+	},
+	{
+		"name": "Shock II",
+		"prerequisites": ["Shock I"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": [
+			"Infantry",
+			"Stealth Infantry",
+			"Rover",
+			"Hover",
+			"Armored",
+			"Close Range Mech",
+			"Xeno Rider",
+			"Xeno Rider Air"
+		],
+		"row": 3,
+        "column": 2
+	},
+	{
+		"name": "Shock III",
+		"prerequisites": ["Shock II"],
+		"uniques": ["[+15]% Strength <when fighting in [Open terrain] tiles>"],
+		"unitTypes": [
+			"Infantry",
+			"Stealth Infantry",
+			"Rover",
+			"Hover",
+			"Armored",
+			"Close Range Mech",
+			"Xeno Rider",
+			"Xeno Rider Air"
+		],
+		"row": 3,
+        "column": 3
+	},
+
+	{
+		"name": "Drill I",
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Infantry", "Stealth Infantry", "Xeno Rider"],
+		"row": 4,
+        "column": 1
+	},
+	{
+		"name": "Drill II",
+		"prerequisites": ["Drill I"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Infantry", "Stealth Infantry", "Xeno Rider"],
+		"row": 4,
+        "column": 2
+	},
+	{
+		"name": "Drill III",
+		"prerequisites": ["Drill II"],
+		"uniques": ["[+15]% Strength <when fighting in [Rough terrain] tiles>"],
+		"unitTypes": ["Infantry", "Stealth Infantry", "Xeno Rider"],
+		"row": 4,
+        "column": 3
+	},
+	{
+		"name": "Charge",
+		"prerequisites": ["Shock II", "Terrain Cover II", "Targeting I", "Scouting II", "Accuracy II", "Barrage II", "Ambulation II","Talons II", "Spike II", "Toxin II", 
+			"Carapace II", "wings II"],
+		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Rover", "Hover", "Armored", "Close Range Mech", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno Melee Land", "Xeno Ranged Land", "Xeno Air",],
+		"row": 36,
+        "column": 0
+	},
+	{
+		"name": "Urban Warfare",
+		"prerequisites": ["Shock II", "Drill II", "Terrain Cover II", "Targeting II"],
+		"uniques": [
+			"[+50]% Strength <vs cities>",
+			"[+10]% Strength <within [2] tiles of a [City center]>",
+			"[+5]% Strength <in [City ruins] tiles>",
+			"[+5]% Strength <in [Urban Improvement] tiles>"
+		],
+		"unitTypes": ["Infantry", "Stealth Infantry", "Close Range Mech", "Xeno Rider", "Xeno Rider Air"],
+		"row": 37,
+        "column": 0
+	},
+	{
+		"name": "Blitz",
+		"prerequisites": ["Shock III", "Drill III", "Terrain Cover III", "Targeting III", "Scouting III"],
+		"uniques": ["[1] additional attacks per turn"],
+		"unitTypes": [
+			"Infantry",
+			"Stealth Infantry",
+			"Rover",
+			"Hover",
+			"Armored",
+			"Close Range Mech",
+			"Xeno Rider",
+			"Xeno Rider Air"
+		],
+		"row": 38,
+        "column": 0
+	},
+	{
+		"name": "Jungle Warfare",
+		"prerequisites": ["Shock III", "Drill III", "Accuracy III", "Barrage III", "Scouting III", "Spike III", "Toxin III", "Carapace III", "Ambulation III"],
+		"uniques": [
+			"Double movement in [Forest]",
+			"Double movement in [Jungle]"
+		],
+		"unitTypes": [
+			"Infantry",
+			"Stealth Infantry",
+			"Sniper",
+			"Close Range Mech",
+			"Xeno Rider",
+			"Xeno Rider Ranged",
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+		],
+		"row": 39,
+        "column": 0
+	},
+	{
+		"name": "Medic I",
+		"prerequisites": [
+			"Shock I",
+			"Drill I",
+			"Terrain Cover I",
+			"Scouting II",
+			"Survivalism II",
+			"Targeting I",
+			"Accuracy I",
+			"Barrage I"
+		],
+		"uniques": ["All adjacent units heal [+5] HP when healing"],
+		"unitTypes": ["Infantry", "Stealth Infantry", "Rover", "Hover", "Scout", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air",],
+		"row": 6,
+        "column": 1
+	},
+	{
+		"name": "Medic II",
+		"prerequisites": ["Medic I"],
+		"uniques": [
+			"[+5] HP when healing <in [Foreign Land] tiles>",
+			"All adjacent units heal [+5] HP when healing"
+		],
+		"unitTypes": ["Infantry", "Stealth Infantry", "Rover", "Hover", "Scout", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"],
+		"row": 6,
+        "column": 2
+	},
+	{
+		"name": "Scouting I",
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"],
+		"row": 7,
+        "column": 1
+	},
+	{
+		"name": "Scouting II",
+		"prerequisites": ["Scouting I"],
+		"uniques": ["[+1] Sight"],
+		"unitTypes": ["Scout", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"],
+		"row": 7,
+        "column": 2
+	},
+	{
+		"name": "Scouting III",
+		"prerequisites": ["Scouting II"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Scout", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"],
+		"row": 7,
+        "column": 3
+	},
+	{
+		"name": "Targeting I",
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water","Satellite", "Xeno Rider Air"],
+		"row": 11,
+        "column": 1
+	},
+	{
+		"name": "Targeting II",
+		"prerequisites": ["Targeting I"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water","Satellite", "Xeno Rider Air"],
+		"row": 11,
+        "column": 2
+	},
+	{
+		"name": "Targeting III",
+		"prerequisites": ["Targeting II"],
+		"uniques": ["[+15]% Strength <vs [Water] units>"],
+		"unitTypes": ["Ranged Water", "Xeno Rider Air"],
+		"row": 11,
+        "column": 3
+	},
+	{
+		"name": "Interception I",
+		"uniques": ["[+33]% Damage when intercepting","[+33]% Strength <vs [Helicopter] units>"],
+		"unitTypes": ["Aerocraft","Satellite", "Xeno True Air"],
+		"row": 14,
+        "column": 1
+	},
+	{
+		"name": "Interception II",
+		"prerequisites": ["Interception I"],
+		"uniques": ["[+33]% Damage when intercepting","[+33]% Strength <vs [Helicopter] units>"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 14,
+        "column": 2
+	},
+	{
+		"name": "Interception III",
+		"prerequisites": ["Interception II"],
+		"uniques": ["[+34]% Damage when intercepting","[+34]% Strength <vs [Helicopter] units>"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 14,
+        "column": 3
+	},
+	
+	{
+		"name": "Dogfighting I",
+		"uniques": ["[+33]% Strength when performing Air Sweep"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 15,
+        "column": 1
+	},
+	{
+		"name": "Dogfighting II",
+		"prerequisites": ["Dogfighting I"],
+		"uniques": ["[+33]% Strength when performing Air Sweep"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 15,
+        "column": 2
+	},
+	{
+		"name": "Dogfighting III",
+		"prerequisites": ["Dogfighting II"],
+		"uniques": ["[+34]% Strength when performing Air Sweep"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 15,
+        "column": 3
+	},
+
+	{
+		"name": "Air Targeting I",
+		"prerequisites": ["Interception I", "Bombardment I", "Dogfighting I"],
+		"uniques": ["[+33]% Strength <vs [Water] units>"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 16,
+        "column": 1
+	},
+	{
+		"name": "Air Targeting II",
+		"prerequisites": ["Air Targeting I"],
+		"uniques": ["[+33]% Strength <vs [Water] units>"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 16,
+        "column": 2
+	},
+
+	{
+		"name": "Sortie",
+		"prerequisites": ["Interception II", "Dogfighting II"],
+		"uniques": ["[1] extra interceptions may be made per turn"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 43,
+        "column": 0
+	},
+
+	{
+		"name": "Operational Range",
+		"prerequisites": ["Interception I", "Dogfighting I","Bombardment I"],
+		"uniques": ["[+2] Range"],
+		"unitTypes": ["Aerocraft","Satellite", "Xeno True Air"],
+		"row": 44,
+        "column": 0
+	},
+	{
+		"name": "Air Repair",
+		"prerequisites": [
+			"Interception II",
+			"Dogfighting II",
+			"Mobility II",
+			"Anti-Armor II",
+			"Bombardment II",
+			"Carapace II",
+			"Toxin II",
+			"Wings II",
+			"Talons II",
+			"Spike II"
+		],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": ["Aerocraft", "Helicopter", "Xeno True Air"],
+		"row": 45,
+        "column": 0
+	},
+
+	{
+		"name": "Evasion",
+		"prerequisites": ["Interception II", "Air Targeting II"],
+		"uniques": ["Damage taken from interception reduced by [50]%"],
+		"unitTypes": ["Aerocraft", "Xeno True Air"],
+		"row": 46,
+        "column": 0
+	},
+	{
+		"name": "Bombardment I",
+		"uniques": ["[+33]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Water", "Aerocraft", "Satellite", "Xeno True Air"],
+		"row": 24,
+        "column": 1
+	},
+	{
+		"name": "Bombardment II",
+		"prerequisites": ["Bombardment I"],
+		"uniques": ["[+33]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Water", "Aerocraft", "Satellite", "Xeno True Air"],
+		"row": 24,
+        "column": 2
+	},
+	{
+		"name": "Bombardment III",
+		"prerequisites": ["Bombardment II"],
+		"uniques": ["[+34]% Strength <vs [Land] units>"],
+		"unitTypes": ["Ranged Water", "Aerocraft", "Xeno True Air"],
+		"row": 24,
+        "column": 3
+	},
+	{
+		"name": "Anti-Armor I",
+		"uniques": ["[+25]% Strength <vs [Armored] units>"],
+		"unitTypes": ["Helicopter", "Close Range Mech", "Ranged Mech", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"],
+		"row": 18,
+        "column": 1
+	},
+	{
+		"name": "Anti-Armor II",
+		"prerequisites": ["Anti-Armor I"],
+		"uniques": ["[+25]% Strength <vs [Armored] units>"],
+		"unitTypes": ["Helicopter", "Close Range Mech", "Ranged Mech", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"],
+		"row": 18,
+        "column": 2
+	},
+	{
+		"name": "Dodge I",
+		"uniques": ["Withdraws before melee combat <with [50]% chance>",],
+		"unitTypes": ["Close Range Mech", "Ranged Mech", "Xeno Melee Land", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno Rider"],
+		"row": 19,
+        "column": 1
+	},
+	{
+		"name": "March",
+		"prerequisites": [
+			"Accuracy III",
+			"Barrage III",
+			"Shock III",
+			"Drill III",
+			"Terrain Cover III",
+			"Dodge II",
+			"Scouting III",
+			"Targeting III",
+			"Toxin III",
+			"Spike III",
+			"Ambulation III",
+			"Wings III",
+			"Supercavitation III",
+			"Talons III",
+			"Carapace III"
+		],
+		"uniques": ["Unit will heal every turn, even if it performs an action"],
+		"unitTypes": [
+			"Infantry",
+			"Stealth Infantry",
+			"Sniper",
+			"Xeno Rider",
+			"Xeno Rider Ranged",
+			"Xeno Rider Air",
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
+		],
+		"row": 47,
+        "column": 0
+	},
+	{
+		"name": "Armor Plating I",
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": [
+			"Rover",
+			"Hover",
+			"Armored",
+			"Siege",
+			"Close Range Water",
+			"Ranged Water",
+			"Submarine",
+			"Water Carrier",
+			"Land Carrier",
+			"Hover Carrier",
+			"Xeno Rider",
+			"Xeno Rider Ranged",
+			"Xeno Rider Air"
+		],
+		"row": 23,
+        "column": 1
+	},
+	{
+		"name": "Armor Plating II",
+		"prerequisites": ["Armor Plating I"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": [
+			"Rover",
+			"Hover",
+			"Armored",
+			"Siege",
+			"Close Range Water",
+			"Ranged Water",
+			"Submarine",
+			"Water Carrier",
+			"Land Carrier",
+			"Hover Carrier",
+			"Xeno Rider",
+			"Xeno Rider Ranged",
+			"Xeno Rider Air"
+		],
+		"row": 23,
+        "column": 2
+	},
+	{
+		"name": "Armor Plating III",
+		"prerequisites": ["Armor Plating II"],
+		"uniques": ["[+25]% Strength <when defending>"],
+		"unitTypes": [
+			"Rover",
+			"Hover",
+			"Armored",
+			"Siege",
+			"Close Range Water",
+			"Ranged Water",
+			"Submarine",
+			"Water Carrier",
+			"Land Carrier",
+			"Hover Carrier",
+			"Xeno Rider",
+			"Xeno Rider Ranged",
+			"Xeno Rider Air"
+		],
+		"row": 23,
+        "column": 3
+	},
+	{
+		"name": "Toxin I",
+		"uniques": [
+			"[+15]% Strength <vs [Infantry] units> <when attacking>",
+			"[+15]% Strength <vs [Stealth Infantry] units> <when attacking>",
+			"[+15]% Strength <vs [Sniper] units> <when attacking>"
+		],
+		"unitTypes": ["Xeno Melee Land", "Xeno Ranged Land", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"],
+		"row": 25,
+        "column": 1
+	},
+	{
+		"name": "Toxin II",
+		"prerequisites": ["Toxin I"],
+		"uniques": [
+			"[+15]% Strength <vs [Infantry] units> <when attacking>",
+			"[+15]% Strength <vs [Stealth Infantry] units> <when attacking>",
+			"[+15]% Strength <vs [Sniper] units> <when attacking>"
+		],
+		"unitTypes": ["Xeno Melee Land", "Xeno Ranged Land", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"],
+		"row": 25,
+        "column": 2
+	},
+	{
+		"name": "Toxin III",
+		"prerequisites": ["Toxin II"],
+		"uniques": [
+			"[+15]% Strength <vs [Infantry] units> <when attacking>",
+			"[+15]% Strength <vs [Stealth Infantry] units> <when attacking>",
+			"[+15]% Strength <vs [Sniper] units> <when attacking>"
+		],
+		"unitTypes": ["Xeno Melee Land", "Xeno Ranged Land", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"],
+		"row": 25,
+        "column": 3
+	},
+
+	{
+		"name": "Spike I",
+		"uniques": ["[+15]% Strength <vs [Armored] units> <when attacking>"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
+			"Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"
+		],
+		"row": 26,
+        "column": 1
+	},
+	{
+		"name": "Spike II",
+		"prerequisites": ["Spike I"],
+		"uniques": ["[+15]% Strength <vs [Armored] units> <when attacking>"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
+			"Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"
+		],
+		"row": 26,
+        "column": 2
+	},
+	{
+		"name": "Spike III",
+		"prerequisites": ["Spike II"],
+		"uniques": ["[+15]% Strength <vs [Armored] units> <when attacking>"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
+			"Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno True Air"
+		],
+		"row": 26,
+        "column": 3
+	},
+	{
+		"name": "Talons I",
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes": ["Xeno Air", "Xeno Rider Air", "Xeno True Air"],
+		"row": 28,
+        "column": 1
+	},
+	{
+		"name": "Talons II",
+		"prerequisites": ["Talons I"],
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes": ["Xeno Air", "Xeno Rider Air", "Xeno True Air"],
+		"row": 28,
+        "column": 2
+	},
+	{
+		"name": "Talons III",
+		"prerequisites": ["Talons II"],
+		"uniques": ["[+15]% Strength <when attacking>"],
+		"unitTypes": ["Xeno Air", "Xeno Rider Air", "Xeno True Air"],
+		"row": 28,
+        "column": 3
+	},
+
+	{
+		"name": "Carapace I",
+		"uniques": ["[+15]% Strength <when defending>"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
+			"Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"
+		],
+		"row": 29,
+        "column": 1
+	},
+	{
+		"name": "Carapace II",
+		"prerequisites": ["Carapace I"],
+		"uniques": ["[+15]% Strength <when defending>"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
+			"Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"
+		],
+		"row": 29,
+        "column": 2
+	},
+	{
+		"name": "Carapace III",
+		"prerequisites": ["Carapace II"],
+		"uniques": ["[+15]% Strength <when defending>"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Air",
+			"Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"
+		],
+		"row": 29,
+        "column": 3
+	},
+
+	{
+		"name": "Ambulation I",
+		"uniques": ["[+1] Movement"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Rider", "Xeno Rider Ranged"
+		],
+		"row": 30,
+        "column": 1
+	},
+	{
+		"name": "Ambulation II",
+		"prerequisites": ["Ambulation I"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Rider", "Xeno Rider Ranged"
+		],
+		"row": 30,
+        "column": 2
+	},
+	{
+		"name": "Ambulation III",
+		"prerequisites": ["Ambulation II"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": [
+			"Xeno Melee Land",
+			"Xeno Ranged Land",
+			"Xeno Melee Water",
+			"Xeno Stealth Water",
+			"Xeno Rider", "Xeno Rider Ranged"
+		],
+		"row": 30,
+        "column": 3
+	},
+
+	{
+		"name": "Wings I",
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Xeno Air", "Xeno Rider Air", "Xeno True Air"],
+		"row": 31,
+        "column": 1
+	},
+	{
+		"name": "Wings II",
+		"prerequisites": ["Wings I"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Xeno Air", "Xeno Rider Air", "Xeno True Air"],
+		"row": 31,
+        "column": 2
+	},
+	{
+		"name": "Wings III",
+		"prerequisites": ["Wings II"],
+		"uniques": ["[+1] Movement"],
+		"unitTypes": ["Xeno Air", "Xeno Rider Air", "Xeno True Air"],
+		"row": 31,
+        "column": 3
+	},
+	{
+		"name": "Frenzy",
+		"prerequisites": ["Spike III", "Toxin III", "Carapace III", "Talons III", "Wings III", "Ambulation III", "Supercavitation III"],
+		"uniques": ["[1] additional attacks per turn"],
+		"unitTypes": ["Xeno Melee Land", "Xeno Melee Water", "Xeno Rider", "Xeno Rider Ranged"],
+		"row": 54,
+        "column": 0
+	},
+	{
+		"name": "Bloodthirst",
+		"prerequisites": ["Spike III", "Toxin III", "Carapace III", "Talons III", "Wings III", "Ambulation III", "Supercavitation III"],
+		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
+		"unitTypes": ["Xeno Melee Land", "Xeno Melee Water", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air"],
+		"row": 55,
         "column": 0
 	},
 ]
