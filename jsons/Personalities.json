@@ -1,1 +1,29 @@
-
+[
+  {
+		"name": "Criminal Protector",
+		"preferredVictoryType": "Diplomatic",
+		"culture": 5,
+		"faith": 4,
+		"food": 5,
+		"gold": 3,
+		"happiness": 6,
+		"production": 6,
+		"science": 5,
+		"military": 8,
+		"aggressive": 6,
+		"declareWar": 5,
+		"commerce": 7,
+		"diplomacy": 6,
+		"loyal": 10,
+		"expansion": 6,
+		"priorities": {
+      "Statecraft": 20,
+			"Pioneer Spirit": 20,
+			"Prestige": 10,
+			"Symbiosis Ideology": 20,
+		},
+		"civilopediaText": [
+			{"text": "This faction has its roots in organized crime, but they are well meaning vigilantes who seek justice for the oppressed"}
+		]
+	},
+]
