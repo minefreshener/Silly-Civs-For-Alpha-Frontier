@@ -13,6 +13,6 @@
 	},
 	{
 		"name": "Xeno True Air",
-		"movementType": "Land"
+		"movementType": "Air"
 	},
 ]
