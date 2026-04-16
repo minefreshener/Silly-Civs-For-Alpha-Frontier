@@ -1,1 +1,8 @@
-
+[
+  "Gain a free [Potential King's Landing Lumber] [in capital] <if [Fungi Pods Monopoly] is constructed> <if [Potential King's Landing Lumber] is not constructed> <for [Sherwood Foundation] Civilizations>",
+    "Gain a free [Potential King's Landing Lumber] [in capital] <if [Exotic Fruits Monopoly] is constructed> <if [Potential King's Landing Lumber] is not constructed> <for [Sherwood Foundation] Civilizations>",
+    "Gain a free [Potential King's Landing Lumber] [in capital] <if [Snuffets Monopoly] is constructed> <if [Potential King's Landing Lumber] is not constructed> <for [Sherwood Foundation] Civilizations>",
+    "Gain a free [Potential King's Landing Lumber] [in capital] <if [Aluminum Monopoly] is constructed> <if [Potential King's Landing Lumber] is not constructed> <for [Sherwood Foundation] Civilizations>",
+    "Gain a free [Potential King's Landing Lumber] [in capital] <if [Seasilk Monopoly] is constructed> <if [Potential King's Landing Lumber] is not constructed> <for [Sherwood Foundation] Civilizations>",
+    "Gain a free [Potential King's Landing Lumber] [in capital] <if [Flowers of Silence Monopoly] is constructed> <if [Potential King's Landing Lumber] is not constructed> <for [Sherwood Foundation] Civilizations>"
+]
