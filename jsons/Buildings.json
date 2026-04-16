@@ -1,21 +1,2 @@
 [
-	{
-		"name": "Aphid Breeder",
-		"hurryCostModifier": 25,
-		"maintenance": 1,
-		"requiredNearbyImprovedResources": ["Dairy Aphid"],
-		"uniques": [
-			"[-1 Food, +1 Production] from [Dairy Aphid] tiles [in this city]",
-			"Comment [Enables you to build Xeno Riding Units]",
-			"Military",
-			"New [Tame Xeno] units start with [15] XP [in this city]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Xenoagriculture",
-		"civilopediaText": [
-			{
-				"text": "It turns out dairy aphids can be bred and trained into decent steeds."
-			}
-		]
-	},
 ]
