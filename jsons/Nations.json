@@ -4,7 +4,7 @@
 		"leaderName": "Robbin Banks",
 		"adjective": ["Sherwood"],
 		"startBias": ["Jungle"],
-		"personality": "personalityType",
+		"personality": "Criminal Protector",
 		"preferredVictoryType":"Diplomatic",
 
 		"startIntroPart1": "The Sherwood Foundation is an organization dedicated to protecting and assisting radical activists and revolutionaries. Many regimes have been toppled with their help.",
@@ -31,7 +31,7 @@
 
 		"outerColor": [85, 85, 85],
 		"innerColor": [126, 192, 253],
-		"favoredReligion": "ReligionName",
+		"favoredReligion": "Astral Pantheon",
 		"uniqueName": "Banditry for a Cause",
 		"uniques": [
 			"No movement cost to pillage",
