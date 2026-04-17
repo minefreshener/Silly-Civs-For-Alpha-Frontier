@@ -121,4 +121,19 @@
 		],
 	},
 	///////////// SILVER CITY MEGACORP ////////////////
+	///////////////// NEW BUILDINGS ////////////////
+	{
+		"name": "Xeno Target Practice",
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Prefab",
+			"Rebel units may spawn",
+		],
+		"requiredTech": "Military Ballistics",
+		"civilopediaText": [
+			{
+				"text": "A host of captured xenos that can be used to train new soldiers for combat. They definately, absolutely, positively, will never ever esca-"
+			}
+		]
+	},
 ]
