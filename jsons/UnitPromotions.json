@@ -195,7 +195,7 @@
 	{
 		"name": "Charge",
 		"prerequisites": ["Shock II", "Terrain Cover II", "Targeting I", "Scouting II", "Accuracy II", "Barrage II", "Ambulation II","Talons II", "Spike II", "Toxin II", 
-			"Carapace II", "wings II"],
+			"Carapace II", "Wings II"],
 		"uniques": ["[+33]% Strength <vs [Wounded] units>"],
 		"unitTypes": ["Rover", "Hover", "Armored", "Close Range Mech", "Xeno Rider", "Xeno Rider Ranged", "Xeno Rider Air", "Xeno Melee Land", "Xeno Ranged Land", "Xeno Air",],
 		"row": 36,
