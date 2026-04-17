@@ -1,1 +1,14 @@
-
+[
+  {
+		"name": "KILL Stock",
+		"resourceType": "Luxury",
+		"uniques": [
+			"Excluded from map editor",
+			"Not shown on world screen <if [King's Landing Lumber HQ] is not constructed>",
+			"Doesn't generate naturally"
+		],
+		"civilopediaText": [
+			{ "text": "The stock shares of the megacorp, King's Landing Lumber." }
+		]
+	},
+]
