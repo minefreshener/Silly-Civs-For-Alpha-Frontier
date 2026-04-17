@@ -22,7 +22,7 @@
 	},
   {
 		"name": "Prefab Hideout",
-    "replaces": "Prefab Bunkers",
+    	"replaces": "Prefab Bunkers",
 		"uniqueTo": "Sherwood Foundation",
 		"cityStrength": 10,
 		"cityHealth": 20,
@@ -40,6 +40,20 @@
 		"civilopediaText": [
 			{
 				"text": "Tough, prefabricated buildings designed to withstand a war and to keep civilians safe."
+			}
+		]
+	},
+	{
+		"name": "Watchdog Organization",
+		"replaces": "Bureaucratic Office",
+		"uniqueTo": "Sherwood Foundation",
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"percentStatBonus": { "culture": 5, "gold": 5 },
+		"requiredTech": "Colony Administration",
+		"civilopediaText": [
+			{
+				"text": "A government organization dedicated to preventing corruption within the ranks of the Sherwood Foundation."
 			}
 		]
 	},
