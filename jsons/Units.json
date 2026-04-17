@@ -258,4 +258,30 @@
 	},
 	///////////////////// NEW UNITS ////////////////////
 	//////////////////// MERCENARIES //////////////////
+	{
+		"name": "Rock Hoppers (Drop Trooper)",
+		"unitType": "Infantry",
+		"movement": 2,
+		"strength": 43,
+		"cost": 600,
+		"requiredTech": "Cybernetics",
+		"uniques": [
+			"Mercenary",
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Offices]>",
+			"Can only be built <in cities with a [King's Landing Lumber Franchise]>",
+			"Can move immediately once bought",
+			"Limited to [3] per Civilization <for [non-[Sherwood Foundation]] Civilizations>",
+			"Limited to [5] per Civilization <for [Sherwood Foundation] Civilizations>",
+			"May Paradrop to [Land] tiles up to [6] tiles away <in [{Friendly} {Land}] tiles>",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Mercenary Pay","Meteorlike"],
+		"attackSound": "machinegun",
+		"civilopediaText": [
+			{
+				"text": "They have a tendency to flatten all opposition within moments of their landing. They also have a reputation for collateral damage."
+			}
+		]
+	},
 ]
