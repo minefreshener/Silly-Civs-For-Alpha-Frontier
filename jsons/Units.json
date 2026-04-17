@@ -97,6 +97,165 @@
 			{ "text": "A stealth specialist with a precise, long-ranged gun." }
 		]
 	},
+	///////////////// MODIFIED UNITS /////////////////
+	{
+		"name": "Penal Legionnaire",
+		"replaces": "Frontier Militia",
+		"uniqueTo": "Belta V Offworld Mining",
+		"unitType": "Infantry",
+		"movement": 2,
+		"strength": 7,
+		"cost": 30,
+		"upgradesTo": "Colony Rifleman",
+		"uniques": [
+			"May upgrade to [Colony Rifleman] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Penal Training"],
+		"attackSound": "shot",
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Penal Legionnaire",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{
+				"text": "Basically just a convict in an atmo-suit and a gun, they spend their life sentence building colonial infrastructure."
+			}
+		]
+	},
+	{
+		"name": "Delver Team",
+		"replaces": "Colony Rifleman",
+		"uniqueTo": "Deep Rock Ganymede",
+		"unitType": "Infantry",
+		"movement": 2,
+		"strength": 15,
+		"cost": 100,
+		"requiredTech": "Next-Gen Armaments",
+		"upgradesTo": "Exoframe Soldier",
+		"uniques": [
+			"May upgrade to [Exoframe Soldier] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Delver Training", "Bug Hunter"],
+		"attackSound": "shot",
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Delver Team",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{
+				"text": "A small squad of veteran miners, armed with company-issued weaponry."
+			}
+		]
+	},
+	{
+		"name": "Colonial Marine",
+		"replaces": "Colony Rifleman",
+		"uniqueTo": "Walpole-Yuen Inc",
+		"unitType": "Infantry",
+		"movement": 2,
+		"strength": 16,
+		"cost": 100,
+		"requiredTech": "Next-Gen Armaments",
+		"upgradesTo": "Exoframe Soldier",
+		"uniques": [
+			"May upgrade to [Exoframe Soldier] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Colonial Marine Unit", "Bug Hunter"],
+		"attackSound": "machinegun",
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Colonial Marine",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{
+				"text": "Soldiers who went through some tough training, they could earn special equipment when they gain a rank."
+			}
+		]
+	},
+	{
+		"name": "Dog Soldier",
+		"replaces": "Colony Rifleman",
+		"uniqueTo": "Einherjar Diktat",
+		"unitType": "Infantry",
+		"movement": 2,
+		"strength": 16,
+		"cost": 100,
+		"requiredTech": "Next-Gen Armaments",
+		"upgradesTo": "Exoframe Soldier",
+		"uniques": [
+			"May upgrade to [Exoframe Soldier] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Dog Soldier Reputation"],
+		"attackSound": "machinegun",
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Dog Soldier",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{
+				"text": "Rumor has it that these soldiers are the result of a crude genetics experiment involving canine DNA. It's not true, of course, but the Diktat uses it as propaganda to demoralize enemies."
+			}
+		]
+	},
+	{
+		"name": "Seadog",
+		"replaces": "Assault Hydrofoil",
+		"uniqueTo": "Free Waverunners",
+		"unitType": "Close Range Water",
+		"movement": 5,
+		"strength": 22,
+		"cost": 125,
+		"requiredTech": "Synthetic Materials",
+		"uniques": [
+			"May enter foreign tiles without open borders",
+			"Can instantly construct a [Prefab Lair] improvement <for [4] movement>",
+			"Can build [Water] improvements on tiles",
+			"Can only be built <in cities with a [Floating Harbor]>",
+			"May upgrade to [Corvette] through ruins-like effects",
+			"Never appears as a Barbarian unit"
+		],
+		"promotions": ["Seadog Raiding Crew"],
+		"upgradesTo": "Corvette",
+		"attackSound": "shipguns",
+		"civilopediaText": [
+			/*
+			{
+				"extraImage": "TileSets/FantasyHex/Units/Seadog",
+				"imageSize": 64
+			},
+			*/
+			{
+				"Separator": true
+			},
+			{
+				"text": "Sleek and artistic, these vessels are still able to put up a fight and then plunder your ships."
+			}
+		]
+	},
 	///////////////////// NEW UNITS ////////////////////
 	//////////////////// MERCENARIES //////////////////
 ]
