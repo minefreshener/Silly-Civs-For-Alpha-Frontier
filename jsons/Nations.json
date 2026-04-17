@@ -29,8 +29,8 @@
 		"neutralRejectingDemand": ".",
 		"hateRejectingDemand": ".",
 
-		"outerColor": [85, 85, 85],
-		"innerColor": [126, 192, 253],
+		"outerColor": [39, 175, 59],
+		"innerColor": [164, 196, 88],
 		"favoredReligion": "Astral Pantheon",
 		"uniqueName": "Banditry for a Cause",
 		"uniques": [
