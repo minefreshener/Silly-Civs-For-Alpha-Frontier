@@ -811,4 +811,8 @@
 		"row": 55,
         "column": 0
 	},
+	{
+		"name": "",
+		"uniques": ["[+50]% Strength <vs [non-[Wounded]] units>"],
+	},
 ]
