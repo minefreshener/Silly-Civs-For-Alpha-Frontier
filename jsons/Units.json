@@ -259,10 +259,10 @@
 	///////////////////// NEW UNITS ////////////////////
 	//////////////////// MERCENARIES //////////////////
 	{
-		"name": "Rock Hoppers (Drop Trooper)",
-		"unitType": "Infantry",
-		"movement": 2,
-		"strength": 43,
+		"name": "King's Men (Drop Trooper)",
+		"unitType": "Xeno Rider",
+		"movement": 4,
+		"strength": 48,
 		"cost": 600,
 		"requiredTech": "Cybernetics",
 		"uniques": [
@@ -273,14 +273,54 @@
 			"Can move immediately once bought",
 			"Limited to [3] per Civilization <for [non-[Sherwood Foundation]] Civilizations>",
 			"Limited to [5] per Civilization <for [Sherwood Foundation] Civilizations>",
-			"May Paradrop to [Land] tiles up to [6] tiles away <in [{Friendly} {Land}] tiles>",
-			"Never appears as a Barbarian unit"
+			"[+2] Sight <for [Sherwood Foundation] Civilizations>",
+			"May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>",
+			"Never appears as a Barbarian unit",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-33]% Strength <vs cities>",
 		],
-		"promotions": ["Mercenary Pay","Meteorlike"],
+		"promotions": ["Mercenary Pay","Chivalry","Armor Plating I"],
 		"attackSound": "machinegun",
 		"civilopediaText": [
 			{
-				"text": "They have a tendency to flatten all opposition within moments of their landing. They also have a reputation for collateral damage."
+				"text": "These corporate mercenaries fight like the knights of old earth, armed with gunlances and mounted atop armor-clad xenos"
+			}
+		]
+	},
+	{
+		"name": "King's Yeomen (Cyborg Sniper)",
+		"unitType": "Xeno Rider Ranged",
+		"movement": 4,
+		"range": 3,
+		"strength": 50,
+		"rangedStrength": 45,
+		"cost": 500,
+		"requiredTech": "Cyberbrains",
+		//"requiredResource": "Digital Storage Space",
+		"uniques": [
+			"Mercenary",
+			"Unbuildable <for [Human player] Civilizations>",
+			"Can only be built <in cities with a [Mercenary Offices]>",
+			"Can only be built <in cities with a [King's Landing Lumber Franchise]>",
+			"Can move immediately once bought",
+			"Limited to [2] per Civilization <before adopting [Symbiosis Ideology]> <for [non-[Sherwood Foundation]] Civilizations>",
+			"Limited to [5] per Civilization <after adopting [Symbiosis Ideology]> <for [non-[Sherwood Foundation]] Civilizations>",
+			"Limited to [3] per Civilization <before adopting [Symbiosis Ideology]> <for [Sherwood Foundation] Civilizations>",
+			"Limited to [8] per Civilization <after adopting [Symbiosis Ideology]> <for [Sherwood Foundation] Civilizations>",
+			"[+2] Sight <for [Sherwood Foundation] Civilizations>",
+			"[+1] Range <after adopting [Symbiosis Ideology]>",
+			"[+15]% Strength <when below [50] HP>",
+			"Never appears as a Barbarian unit",
+			"Can move after attacking",
+			"No defensive terrain bonus",
+			"[-33]% Strength <vs cities>",
+		],
+		"promotions": ["Mercenary Pay","Chivalry"],
+		"attackSound": "SingleLaser",
+		"civilopediaText": [
+			{
+				"text": "These corporate mercenaries are well trained 'horse'-archers who fight for the King's Landing Lumber megacorporation."
 			}
 		]
 	},
