@@ -46,4 +46,45 @@
 			"New Nottingham", "Hydroshire", "Cotford", "Cotfordshire", "Clotson", "Flogging", "Spillworth", "Stratford-Upon-Unidentified-Fluid-Substance-Deposit"],
 		"spyNames": ["Spy1", "Spy2", "Spy3", "Spy4", "Spy5", "Spy6", "Spy7", "Spy8", "Spy9", "Spy10"]
 	},
+	{
+		"name": "The Free Hive",
+		"leaderName": "",
+		"adjective": ["Sherwood"],
+		"startBias": ["Jungle"],
+		"personality": "Criminal Protector",
+		"preferredVictoryType":"Diplomatic",
+
+		"startIntroPart1": "The Sherwood Foundation is an organization dedicated to protecting and assisting radical activists and revolutionaries. Many regimes have been toppled with their help.",
+		"startIntroPart2": ". Can you build a colony that stands the test of time?",
+
+		"declaringWar": ".",
+		"attacked": ".",
+		"defeated": ".",
+		"introduction": ".",
+
+		"neutralHello": ".",
+		"hateHello": ".",
+
+		"denounced": ".",
+		"declaringFriendship": ".",
+		"tradeRequest": ".",
+
+		"neutralDenouncing": ".",
+		"hateDenouncing": ".",
+		
+		"acceptingDemand": ".",
+		"neutralRejectingDemand": ".",
+		"hateRejectingDemand": ".",
+
+		"outerColor": [39, 175, 59],
+		"innerColor": [164, 196, 88],
+		"favoredReligion": "Xenocult",
+		"uniqueName": "The Rebellious Mind",
+		"uniques": [
+			"No movement cost to pillage",
+		],
+		"cities": ["The Hive", "Nest A", "Nest B", "Nest C", "Nest D", "Nest E", "Nest F", "Nest G", "Nest H", "Nest I", "Nest J", "Nest K", 
+			"Nest L", "Nest M", "Nest N", "Nest O", "Nest P", "Nest Q", "Nest R", "Nest S"],
+		"spyNames": ["Spy1", "Spy2", "Spy3", "Spy4", "Spy5", "Spy6", "Spy7", "Spy8", "Spy9", "Spy10"]
+	},
 ]
